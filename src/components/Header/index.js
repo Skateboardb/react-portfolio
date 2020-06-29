@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.css';
-import { Container, Row, Col } from 'reactstrap';
+import { Container, Row } from 'reactstrap';
 
 class Header extends React.Component {
 	constructor(props) {
@@ -16,7 +16,7 @@ class Header extends React.Component {
 					<h1>
 						Hello, I'm <span id="highlight">Branford Shaw</span>;
 						<br />
-						I'm a full-stack web developer.
+						I'm a full-stack web developer :]
 					</h1>
 				</Row>
 				<Row className="">
