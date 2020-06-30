@@ -1,0 +1,10 @@
+.main-section {
+  text-align: center;
+  height: 100vh;
+}
+
+#about-header {
+  border-bottom: 2px black solid;
+  width: 6em;
+  margin: auto;
+}

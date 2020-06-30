@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 // import { Route, Redirect } from 'react-router-dom';
+
 import Header from './components/Header';
-import Nav from './components/Nav';
+import Navigation from './components/Navigation';
+import About from './components/About';
 
 import './assets/App.css';
 
@@ -10,7 +12,8 @@ class App extends Component {
     return (
       <>
         <Header />
-        <Nav />
+        <Navigation />
+        <About />
       </>
     );
   }
