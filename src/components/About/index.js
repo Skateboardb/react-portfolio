@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Row } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import './style.css';
 
 export default class About extends Component {
@@ -20,6 +20,65 @@ export default class About extends Component {
             technical side and get a look at some of the projects I've been
             working on.
           </p>
+        </Row>
+        <Row id='skillset'>
+          <Col sm={true}>
+            <h1 className='skill-col'>Front-End</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+              nec posuere ligula. Maecenas elementum eros eu dapibus lobortis.
+              Morbi dictum sed nunc quis tempus. Donec tempus egestas turpis,
+              eget tempus nunc maximus porttitor. Maecenas viverra tincidunt
+              purus, non accumsan lacus malesuada at. Maecenas finibus ipsum
+              nunc, eu viverra est interdum ut.
+              <br></br>
+              <br></br>
+              Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+              posuere cubilia curae; Maecenas elementum, augue nec blandit
+              congue, enim diam eleifend nisi, viverra tristique elit tellus non
+              est. In eleifend nunc id ipsum pulvinar, ac semper sapien gravida.
+              Fusce sed posuere erat. Quisque congue ac turpis vestibulum
+              facilisis.
+            </p>
+          </Col>
+          <Col sm={true} id='middle-col'>
+            <h1 className='skill-col'>Back-End</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+              nec posuere ligula. Maecenas elementum eros eu dapibus lobortis.
+              Morbi dictum sed nunc quis tempus. Donec tempus egestas turpis,
+              eget tempus nunc maximus porttitor. Maecenas viverra tincidunt
+              purus, non accumsan lacus malesuada at. Maecenas finibus ipsum
+              nunc, eu viverra est interdum ut.
+              <br></br>
+              <br></br>
+              Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+              posuere cubilia curae; Maecenas elementum, augue nec blandit
+              congue, enim diam eleifend nisi, viverra tristique elit tellus non
+              est. In eleifend nunc id ipsum pulvinar, ac semper sapien gravida.
+              Fusce sed posuere erat. Quisque congue ac turpis vestibulum
+              facilisis.
+            </p>
+          </Col>
+          <Col sm={true}>
+            <h1 className='skill-col'>DevOps</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+              nec posuere ligula. Maecenas elementum eros eu dapibus lobortis.
+              Morbi dictum sed nunc quis tempus. Donec tempus egestas turpis,
+              eget tempus nunc maximus porttitor. Maecenas viverra tincidunt
+              purus, non accumsan lacus malesuada at. Maecenas finibus ipsum
+              nunc, eu viverra est interdum ut.
+              <br></br>
+              <br></br>
+              Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+              posuere cubilia curae; Maecenas elementum, augue nec blandit
+              congue, enim diam eleifend nisi, viverra tristique elit tellus non
+              est. In eleifend nunc id ipsum pulvinar, ac semper sapien gravida.
+              Fusce sed posuere erat. Quisque congue ac turpis vestibulum
+              facilisis.
+            </p>
+          </Col>
         </Row>
       </div>
     );

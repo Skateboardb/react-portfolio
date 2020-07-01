@@ -12,6 +12,24 @@
   /* border-bottom: 2px black solid; */
 
   background-color: khaki;
-  padding: 0 0 50px 0;
+  padding: 0 0 100px 0;
   position: relative;
+}
+
+#skillset {
+  background-color: white;
+  border: 1px solid black;
+  position: relative;
+  top: -30px;
+  margin: 0 10px;
+  border-radius: 15px;
+}
+
+#middle-col {
+  border-right: 1px grey solid;
+  border-left: 1px grey solid;
+}
+
+.skill-col {
+  font-size: 30px;
 }
