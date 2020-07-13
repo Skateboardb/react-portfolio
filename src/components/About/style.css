@@ -4,7 +4,7 @@
 
 .main-section {
   text-align: center;
-  height: 100vh;
+  /* height: 100vh; */
   padding: 0;
 }
 
@@ -12,7 +12,7 @@
   /* border-bottom: 2px black solid; */
 
   background-color: khaki;
-  padding: 0 0 100px 0;
+  padding: 5rem 0 16rem 0;
   position: relative;
 }
 
@@ -20,7 +20,7 @@
   background-color: white;
   border: 1px solid black;
   position: relative;
-  top: -30px;
+  top: -100px;
   margin: 0 10px;
   border-radius: 15px;
 }
