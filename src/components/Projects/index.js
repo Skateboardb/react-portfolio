@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import { Card, Row, Col } from 'react-bootstrap';
+import './assets/style.css';
 
 import books from './assets/img/books.png';
 import burger from './assets/img/burger.png';
+import news from './assets/img/news.png';
 
 export default class Projects extends Component {
   //   array of objects containing project link, picture,
@@ -16,12 +18,20 @@ export default class Projects extends Component {
           link: 'https://branfords-books.herokuapp.com/',
           repo: 'https://github.com/Skateboardb/react-google-books',
           img: books,
+          desc:
+            'This application allows users to search Google Books for popular (and unpopular) titles with ease. Results are shown on a single page, providing the options to view the Google Books page or to save the title to a public collection.',
         },
         {
           title: 'King Burger',
           link: 'https://rocky-dusk-58529.herokuapp.com/',
           repo: 'https://github.com/Skateboardb/burger',
           img: burger,
+        },
+        {
+          title: 'The Best News',
+          link: 'https://the-best-news.herokuapp.com/',
+          repo: 'https://github.com/Skateboardb/the-best-news',
+          img: news,
         },
       ],
     };
@@ -37,15 +47,32 @@ export default class Projects extends Component {
         <Row>
           <h2>Here are some of the projects I've built since I started </h2>
         </Row>
-        <Row>
-          {proj.map((project) => (
-            <Col lg='6' md='6' sm='10' xl='3'>
-              <Card style={{ width: '18rem' }}>
-                <Card.Img variant='top' src={project.img} />
-                <Card.Title>{project.title}</Card.Title>
-              </Card>
-            </Col>
-          ))}
+
+        <Row className='projects-container'>
+          <Row className='projects-row'>
+            {proj.map((project) => (
+              <Col lg='6' md='6' sm='6' xs='10'>
+                <Card className='project-card' style={{ width: '18rem' }}>
+                  <Card.Img
+                    className='card-img'
+                    variant='top'
+                    src={project.img}
+                  />
+                  <Row>
+                    <Col xs='12'>
+                      <Card.Title>{project.title}</Card.Title>
+                    </Col>
+                    <Col xs='6'>
+                      <a href={project.link}>Live Version</a>
+                    </Col>
+                    <Col xs='6'>
+                      <a href={project.repo}>Project Repo</a>
+                    </Col>
+                  </Row>
+                </Card>
+              </Col>
+            ))}
+          </Row>
         </Row>
         <Row>
           <h1>Works in progress</h1>

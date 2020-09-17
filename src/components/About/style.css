@@ -21,8 +21,9 @@
   border: 1px solid black;
   position: relative;
   top: -100px;
-  margin: 0 10px;
+  margin: auto;
   border-radius: 15px;
+  max-width: 1200px;
 }
 
 #middle-col {
